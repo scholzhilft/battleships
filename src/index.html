@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="body">
+    <div id="start-container">
+        <div id="content" >
+            <img id="logo" src="./img/battleships.png" alt="Battleships Logo">
+            <img id='start-button' src="./img/start_button_round.png" alt="">
+        </div>
+        <audio id="audio" muted autoplay loop>
+            <source src="./img/drums.wav">
+        </audio>
+    </div>
+    <div id="audio-icon">🔇</div>
+    <div id="game-container" class="gone">        
+        <div id="board1-container">
+            <div id="label1" class="label" ></div>
+            <table id="gameBoard1"></table>
+        </div>
+        <div id="popup" class="gone"></div>
+        <button id="generate" class="">GENERATE BOARDS</button>
+        <button id="new-game" class="gone">NEW GAME</button>
+        <div id="board2-container">
+            <div id="label2" class="label" ></div>
+            <table id="gameBoard2"></table>
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
